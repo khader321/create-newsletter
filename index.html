@@ -1,0 +1,37 @@
+<html>
+<head>
+ <link href="newsletter.css"  rel="stylesheet" type="text/css"/>
+ <script type="text/javascript" src="jquery.js"></script>
+ <script>
+  document.addEventListener('DOMContentLoaded',function()
+  {
+   $("#newsletter_form").slideDown();
+  });
+
+  function close_form()
+  {
+   $("#newsletter_form").slideUp();
+  }
+ </script>
+</head>
+<body>
+
+<div id="newsletter_form">
+ <h1 class="signup_label">Subscribe To Get Email Updates Of Our Latest Tutorials On Web Development</h1>
+ <form action="signup.php" method="post">
+  <p>
+   <input type="text" name="user_name" id="user_name" placeholder="Enter Your Name">
+   <input type="text" name="email" id="email" placeholder="Enter Your Email Id"/>
+  </p>
+  <input type="submit" value="Subscribe" name="submit_form"/>
+  <input type="button" value="No Thanks" onclick="close_form();"/>
+ </form>
+</div>
+
+
+<div id="wrapper">
+ <h2>Create Newsletter SignUp Form Using jQuery And PHP</h2>
+</div>
+
+</body>
+</html>
